@@ -83,7 +83,7 @@ body section p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color:yellow;
+    color: rgb(207, 255, 205);
     font-size: larger;
     font-weight: bold;
 }
@@ -110,14 +110,6 @@ body section p {
   height: 400px;
 
 }
-
-.contact{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: rgb(207, 255, 205);
-}
-
 
 .main-header nav ul a{
     text-decoration: none;
@@ -180,8 +172,18 @@ footer .svg{
     padding:3rem;
 }
 
-.contact-us-details a{
+.contact-us-details a, .cart-details a{
     color: black;
+}
+
+.cart-details{
+    display: none;
+    position:absolute;
+    z-index: 2;
+    top:12%;
+    right:5%;
+    background-color:rgb(208, 226, 208);
+    padding:3rem;
 }
 
 h2{
@@ -192,14 +194,38 @@ h3{
     text-decoration:underline solid;
     margin-top: 1.5rem;
     margin-bottom: 0px;
+    font-size: 1.2 rem;
 }
 
+.add-cart{
+    margin-top: 1rem;
+    font-size: 1.2 rem;
+}
 .close-btn{
     background-color: rgba(115, 190, 115, 0.635);
     position:absolute;
     top:0px;
     right:0px;
 }
+
+.closecart-btn{
+    background-color: rgba(115, 190, 115, 0.635);
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+
+.ul-cart{
+    list-style: none;
+}
+
+.itemheading{
+    font-weight: bold;
+}
+.item-name, .quantity, amount {
+    padding: 10px;
+}
+
 
 @media (min-width: 768px) {
    /*
@@ -218,6 +244,10 @@ h3{
 
     .hamburger{
         display:none;
+    }
+
+    h3,.add-cart{
+        font-size :1.4rem;
     }
 
     .carousel-item img{
