@@ -247,9 +247,13 @@ footer{
     }
 
 
-    table {
-        border: 1px solid greenyellow;
-      }
+    .total-amount {
+        margin:1rem;
+        font-weight:bold;
+    }
+    table,td,tr,th{
+        border: 1px solid darkgreen;
+    }
 
 @media (min-width: 768px) {
     .main-header{

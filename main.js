@@ -86,6 +86,7 @@ if(addToCartBtns){
 if(cartBtn){
     cartBtn.addEventListener('click', function(event){
     //     const ulCart = document.querySelector('.ul-cart');
+        let amount = 0;
         const cartDetails1 = document.querySelector('.cart-details');
         const table = document.querySelector('#cart-table');
         cartMap.forEach((value, key)=>{
@@ -98,7 +99,12 @@ if(cartBtn){
             c2.innerText = value;
             c3.innerText = value*5;
             // ulCart.innerHTML +=  '<li><span class="item-name">'+label+'</span><span class="quantity">'+value+'</span> <span class="amount"></span><li>'
-        } );
+            amount +=  value*5;
+            });
+        if(amount > 0){
+            const totalAmountP = document.querySelector('.total-amount');
+            totalAmountP.textContent = 'Total Amount is $'+ amount.toFixed(2);
+        }
         if(cartDetails1){
             cartDetails1.style.display= 'inline';
         }

@@ -8,6 +8,59 @@
     <link rel="stylesheet" href="./main.css">
     <style>
 
+        .freshproduce{
+            background-image: url(./images/aboutFreshProduce.jpg);
+            min-height:800px;
+            background-size: cover;
+            color:green;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .freshproduce-contact{
+            min-height: inherit;
+            display: flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            font-style: italic;
+        }
+       
+
+        h2{
+            color: green;
+        }
+
+        .partner-grid{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:.5rem
+        }
+
+        .our-team,.families,.farmers, .food-for-everyone  {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
+
+        .food-for-everyone{
+            width: 100%;
+        }
+
+
+        .our-team img,.families img,.farmers img,.food-for-everyone img{
+            height: 90%;
+            object-fit: cover;
+        }
+
+        .whoweare-details,.our-partners{
+            margin: 1rem;
+        }
+
 
     </style>
 </head>
@@ -63,22 +116,43 @@
         </Section>
        
     </header>
-    <h1> Fresh Produce</h1>
-    <section  class="whoweare">
-        img
-        <sectionclass="whoweare-details"></section>
+    <section  class="freshproduce">
+        <article class="freshproduce-contact">
+                <p class="motto">From our farm to your home with care</p>
+                <p>(61) 424 479 789</p><p>freshproduce@gmail.com</p>
+        </article>
+    </section>
+
+    <section class="whoweare-details">
         <h2>Who we are </h2>
         <p>Fresh Produce has been dedicated to delivering quality, value service to Aussie families and communities.
         </p>
     </section>
+      
 
 
 <section  class="our-partners">
     <h2>Our partners  </h2>
     <p>We’re passionate about the people we work with behind the scenes – from farmers, family to charity partnerships – in our commitment to supporting Aussies to access great fresh produce and help those doing it tough.</p>
-    <section class="our-team"></section>
-    <section class="families"></section>
-    <section class="farmers"></section>
+  
+    <section class="partner-grid">
+        <section class="our-team">
+            <img src="./images/ourteam.jpg" alt="our team ">
+            <h3>Our Team</h3>
+        </section>
+        <section class="families">
+            <img src="./images/families.jpg" alt="Families ">
+            <h3>Families</h3>
+        </section>
+        <section class="farmers">
+            <img src="./images/farmers.jpg" alt="farmers ">
+            <h3>Farmers</h3>
+        </section>
+        <section class="food-for-everyone">
+            <img src="./images/foodforEveryone.jpg" alt="foodforEveryone ">
+            <h3>Food For Everyone</h3>
+        </section>
+    </section>
 </section>
 
 <section class="sustainbility">
