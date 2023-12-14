@@ -248,10 +248,11 @@ footer{
 
 
     .total-amount {
-        margin:1rem;
+        margin:1.2rem;
         font-weight:bold;
     }
     table,td,tr,th{
+        margin:1.2rem;
         border: 1px solid darkgreen;
     }
 
